@@ -12,10 +12,10 @@ d3.csv("https://raw.githubusercontent.com/decheverriunal/graficaIsotoposBogota/m
         mode: 'markers',
         type: 'scatter',
         marker: { 
-            size: 6,
+            size: 4,
             color: 'rgba(45, 229, 12, 0.7)',
             line: {
-                color: 'rgba(100, 100, 100, 1)',
+                color: 'rgba(50, 150, 25, 1)',
                 width: 1
             }
         }
@@ -35,6 +35,10 @@ d3.csv("https://raw.githubusercontent.com/decheverriunal/graficaIsotoposBogota/m
     let data = [puntos, linea];
 
     let layout = {
+        title: {
+            text: 'Relación P/GW-δ18O precipitación y agua subterránea',
+            size: 20
+        },
         legend: {
             x: 1,
             xanchor: 'right',
