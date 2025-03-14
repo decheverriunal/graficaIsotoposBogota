@@ -1,4 +1,4 @@
-d3.csv("https://raw.githubusercontent.com/hidabril/ISOTOPOS_BOGOTA/main/BASE_ISOTOPOS_SUBTERRANEA_COMPLETA.csv").then(function(d) {
+d3.csv("https://raw.githubusercontent.com/decheverriunal/graficaIsotoposBogota/main/BASE_ISOTOPOS_SUBTERRANEA_COMPLETA.csv").then(function(d) {
     let deut2h = d.map((val) => { return Number(val.DEUT_2H) })
     let oxig18 = d.map((val) => { return Number(val.OXIG_18) })
 
