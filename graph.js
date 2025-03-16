@@ -35,16 +35,13 @@ d3.csv("https://raw.githubusercontent.com/decheverriunal/graficaIsotoposBogota/m
     let data = [puntos, linea];
 
     let layout = {
-        title: {
-            text: 'Relación P/GW-δ18O precipitación y agua subterránea',
-            font: {
-                size: 22
-            },
-        },
+        autosize: true,
+        //width: Math.min(screen.availWidth,screen.availHeight),
+        //height: Math.min(screen.availWidth,screen.availHeight),
         legend: {
-            x: 1,
+            x: 1.1,
             xanchor: 'right',
-            y: 1.12,
+            y: 1.2,
             bgcolor: 'rgba(0, 0, 0, 0)',
             orientation: 'h'
         },
@@ -52,12 +49,14 @@ d3.csv("https://raw.githubusercontent.com/decheverriunal/graficaIsotoposBogota/m
         xaxis: {
             range: [-91, -32],
             linecolor: '#636363',
-            linewidth: 1
+            linewidth: 1,
+            automargin: true,
         },
         yaxis: {
             range: [-13, -5.5],
             linecolor: '#636363',
-            linewidth: 1
+            linewidth: 1,
+            automargin: true,
         }
     };
 
