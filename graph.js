@@ -34,10 +34,13 @@ d3.csv("https://raw.githubusercontent.com/decheverriunal/graficaIsotoposBogota/m
     
     let data = [puntos, linea];
 
+    console.log(this)
+    console.log(this)
+
     let layout = {
         autosize: true,
-        width: Math.min(screen.availWidth,screen.availHeight)*0.9,
-        height: Math.min(screen.availWidth,screen.availHeight)*0.9,
+        width: Math.min(this.innerWidth,this.innerHeight)*0.9,
+        height: Math.min(this.innerWidth,this.innerHeight)*0.9,
         margin: {
             t: 0,
             l: 0,
