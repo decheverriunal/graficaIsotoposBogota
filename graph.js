@@ -39,8 +39,8 @@ d3.csv("https://raw.githubusercontent.com/decheverriunal/graficaIsotoposBogota/m
 
     let layout = {
         autosize: true,
-        width: Math.min(this.innerWidth,this.innerHeight)*0.9,
-        height: Math.min(this.innerWidth,this.innerHeight)*0.9,
+        //width: Math.min(this.innerWidth,this.innerHeight)*0.9,
+        //height: Math.min(this.innerWidth,this.innerHeight)*0.9,
         margin: {
             t: 0,
             l: 0,
@@ -56,7 +56,7 @@ d3.csv("https://raw.githubusercontent.com/decheverriunal/graficaIsotoposBogota/m
             bgcolor: 'rgba(0, 0, 0, 0)',
             //orientation: 'h'
         },
-        font: {size: screen.availWidth/50},
+        //font: {size: screen.availWidth/50},
         xaxis: {
             range: [-91, -32],
             linecolor: '#636363',
